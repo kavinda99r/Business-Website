@@ -5,33 +5,95 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
     <script src="script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
+      href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
     />
     <title>Document</title>
   </head>
   <body>
-    <nav>
-      <div>
-        <h1>LOGO</h1>
-      </div>
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
+    <header>
+      <nav>
+        <div>
+          <h1>LOGO</h1>
+        </div>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
 
-      <div class="menu-icon">
-        <img src="/assets/menu.svg" alt="" class="menu-open" id="menu-open"  onclick="menOpen()">
-        <img src="/assets/x.svg" alt="" class="menu-close" id="menu-close" style="display: none;" onclick="menClose()">
+        <div class="menu-icon">
+          <img
+            src="/assets/menu.svg"
+            alt=""
+            class="menu-open"
+            id="menu-open"
+            onclick="menOpen()"
+          />
+          <img
+            src="/assets/x.svg"
+            alt=""
+            class="menu-close"
+            id="menu-close"
+            style="display: none"
+            onclick="menClose()"
+          />
+        </div>
+      </nav>
+      <div class="menu" id="menu">Hello</div>
+    </header>
+
+    <section class="container" id="hero">
+      <div class="hero">
+        <h1>Building Cutting Edge Software for the Future</h1>
+        <h3>
+          Custom software solutions designed to drive innovation and scale your
+          business.
+        </h3>
+        <p>
+          From startups to enterprises, we create tailored software solutions
+          that accelerate growth and efficiency. Let’s build something amazing
+          together!
+        </p>
+        <a href="#"><button>Get a Free Consultation</button></a>
       </div>
-    </nav>
-    <div class="menu" id="menu">
-        Hello
-    </div>
+      <div class="info">
+        <div class="info-content">
+          <span>20+</span>
+          <h2>Clients Served</h2>
+          <p>From startups to global enterprises</p>
+        </div>
+        <div class="info-content">
+          <span>20+</span>
+          <h2>Successful Projects</h2>
+          <p>Delivering excellence in every design</p>
+        </div>
+        <div class="info-content">
+          <span>10+</span>
+          <h2>Years of Experience</h2>
+          <p>Crafting stunning visuals with passion</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="container" id="about">
+      <div class="about">
+        <h2>Who We Are</h2>
+        <p>
+          We are a team of passionate developers, designers, and strategists
+          committed to delivering top-tier software solutions. With expertise in
+          web, mobile, and cloud technologies, we turn ideas into reality.
+        </p>
+        <p>
+          At [Your Company Name], we believe in the power of innovation and
+          technology to transform businesses. Our mission is to create scalable,
+          efficient, and high-performance software tailored to meet the unique
+          needs of our clients.
+        </p>
+      </div>
+    </section>
   </body>
 </html>
