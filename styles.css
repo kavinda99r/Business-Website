@@ -266,12 +266,14 @@ ul li a {
 /* ============================================ Why choose us section ============================================ */
 
 .whyus {
+  position: relative;
   padding: 0 6%;
-  padding-top: 20px;
+  padding-top: 80px;
   padding-bottom: 20px;
   display: flex;
 }
-.whyus-content {
+
+.whyus-image {
   position: relative;
   background-image: linear-gradient(to right, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("/assets/Image2.jpg");
   background-size: cover;
@@ -282,20 +284,39 @@ ul li a {
   border-radius: 10px;
 }
 
-
-
-.whyus-content p{
+.whyus-content{
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 6px 0 rgba(0, 0, 0, 0.19);
   background-color: rgb(255, 255, 255);
   color: #313131;
-  padding: 20px;
-  position: absolute;
-  width: 400px;
-  top: 40px;
-  right: 0;
+  padding: 40px;
+  top: -20px;
+  right: 20px;
+}
+
+.whyus-content h2{
+  font-size: 35px;
+  color: #313131;
+}
+
+.whyus-content h3{
+  font-size: 20px;
+  color: #313131;
+  font-weight: 500;
+  opacity: 60%;
+  margin-bottom: 10px;
+}
+
+.whyus-content li{
   font-family: var(--body);
+  color: #313131;
   font-size: 18px;
   font-weight: 400;
 }
+
 
 /* ============================================ Mobile view ============================================ */
 
@@ -369,6 +390,18 @@ ul li a {
 
   .about img {
     width: 100%;
+  }
+
+  .whyus-content h2{
+    font-size: 35px;
+  }
+  
+  .whyus-content h3{
+    font-size: 20px;
+  }
+  
+  .whyus-content li{
+    font-size: 15px;
   }
 }
 
